@@ -4,8 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin / Rock Paper Scissors</title>
+    <style>
+      body {
+        max-width: 400px;
+      }
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
+    <div class="wrapper">
+      <div class="left">
+        <button class="btn" data-choice="rock">Rock</button>
+        <button class="btn" data-choice="paper">Paper</button>
+        <button class="btn" data-choice="scissors">Scissors</button>
+      </div>
+      <div class="right">
+        <p>
+          Score P<span class="userScore">0</span> - C<span class="computerScore"
+            >0</span
+          >
+        </p>
+      </div>
+    </div>
+    <p>Your Choices: <span class="userChoice"></span></p>
+    <p>Computer Choices: <span class="computerChoice"></span></p>
+    <div class="display"></div>
     <script src="index.js"></script>
   </body>
 </html>
